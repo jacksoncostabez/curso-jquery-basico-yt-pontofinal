@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso jQuery</title>
+    <!-- CDN -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        //usada para ser carregada antes de todos os elementos da página.
+        $(document).ready(function(){
+            alert('DOM Carregado!');
+        });
+
+        //carrega somente após os elementos da página serem carregados.
+        $(window).load(function(){
+            alert('Elementos Carregados');
+        });
+
+    </script>
+</head>
+<body>
+    <img src="https://www.estudokids.com.br/wp-content/uploads/2020/02/o-que-e-paisagem.jpg" alt="">
+</body>
+</html>

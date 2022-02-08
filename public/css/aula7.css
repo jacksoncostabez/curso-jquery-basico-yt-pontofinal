@@ -1,0 +1,29 @@
+body{
+    font: 14px;
+    text-align: center;
+}
+
+.ex1{
+    width: 460px;
+    padding: 20px;
+    background: #1e90ff;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+input, textarea {
+    padding: 5px;
+    width: 450px;
+}
+
+button{
+    width: 465px;
+}
+
+label{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f8ff;
+}

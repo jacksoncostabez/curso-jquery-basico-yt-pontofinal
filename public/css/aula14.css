@@ -1,0 +1,32 @@
+* {
+    text-align: center;
+}
+
+body {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+#pagina .caixa {
+    margin-bottom: 1px;
+    border: 1px solid #a52a2a;
+    color: #333;
+    font: 14px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+#pagina .caixa .titulo{
+    padding: 15px;
+    background: #a52a2a;
+    color: #fff;
+    font-weight: bold;
+}
+
+#pagina .caixa .titulo:hover{
+    cursor: pointer;
+    background: #900000;
+}
+
+#pagina .caixa .hide{
+    display: none;
+}

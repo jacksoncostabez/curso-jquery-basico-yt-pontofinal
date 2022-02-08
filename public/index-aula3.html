@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de desenvolvimento</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        /**
+         * usada para ser carregada antes de todos os elementos da página.
+         * Nela vc especifica os elementos a receberem as funções do jquery
+        */
+        $(document).ready(function () {
+
+            // $('h1').css("color", "#f66");
+            // $('h1').hide(); //oculta o elemento na inicialização
+            // $('h1').delay('1000'); //delay de 1s
+            // $('h1').fadeIn('slow');
+            // $('h1').text('Curso de jQuery Completo');
+
+            //encadeamento - inline
+            // $('h1').css('color', '#f66').hide().delay('1000').fadeIn('slow').text('Curso de jQuery Básico');
+
+            //encadeamento em bloco
+            // $('h1')
+            //     .css('color', '#f66')
+            //     .hide()
+            //     .delay('1000')
+            //     .fadeIn('slow')
+            //     .text('Curso de jQuery Básico')
+            //     .click(function(){
+            //         $('body').css('background', 'black')
+            //         $('h1').css('color', '#fff');
+            //     });
+
+            $('a').css({ color: 'red', display: 'block' }).click(function(){
+                $('body').css('background', 'white');
+            });
+
+            $('.link2').css('color', 'green').click(function(){
+                $('body').css('background', 'green')
+                $('.link2').css('color', 'white');
+            });
+
+            $('#link3').css('color', 'black').click(function(){
+                $('body').css('background', 'yellow');
+            });
+
+            //aplica a todos os elementos
+            $('*').css('padding', '10px');
+
+            $('h1, #link3').css('border-bottom', 'solid 3px blue');
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Curso de jQuery</h1>
+
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3">Link 3</a>
+
+</body>
+
+</html>
